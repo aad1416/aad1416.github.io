@@ -7,11 +7,21 @@
   "scope": "/",
   "id" : "/",
   "start_url": "/",
+  "icons": [{
+    "src": "/aad1416.svg",
+    "type": "image/svg+xml"
+  }],
   "shortcuts": [
     {
       "name": "aad1416",
       "description": "AAD1416",
-      "url": "/"
+      "url": "/",
+	  "icons": [
+        {
+          "src": "/aad1416.svg",
+          "type": "image/svg+xml"
+        }
+      ]
     }
   ]
 }
