@@ -3,12 +3,14 @@
   "short_name": "AAD1416",
   "theme_color": "#303c26",
   "background_color": "#303c26",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "id" : "/",
   "start_url": "/",
   "icons": [{
     "src": "/aad1416.svg",
+	"sizes": "144x144",
+	"purpose":"any",
     "type": "image/svg+xml"
   }],
   "shortcuts": [
