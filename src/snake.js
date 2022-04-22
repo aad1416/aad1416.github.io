@@ -253,7 +253,7 @@ function checkNewPosition() {
     for (var z = 1; z < snake.length; z++) {
         var part = snake[z];
         if (head.position().top === part.position().top && head.position().left === part.position().left) {
-            showInfoAlert('<h4 dir=auto>باختی :)))</h4><br/><p style="font-size:19px">امتیاز: <b>' + snake.length + '</b></p><br/><br/><a href="#" onclick="location.reload();">شروع دوباره</a><br/><br/>');
+            showInfoAlert('<h4 dir=auto>باختی :)))</h4><br/><p style="font-size:19px">امتیاز: <b>' + (snake.length-9) + '</b></p><br/><br/><a href="#" onclick="location.reload();">شروع دوباره</a><br/><br/>');
             //focus link for key event
             $('#infoAlert a').focus();
             stopMovingOfSnake = true;
