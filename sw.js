@@ -8,6 +8,7 @@ self.addEventListener("install", (event) => {
     addResourcesToCache([
       "/index.html",
 	  "/m.json",
+	  "/aad1416.svg",
     ])
   );
 });
