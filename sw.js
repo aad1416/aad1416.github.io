@@ -65,6 +65,10 @@ self.addEventListener('install', (event) => {
       "/index.html",
 	  "/m.json",
 	  "/aad1416.svg",
+	  "/aad1416.png",
+	  "/src/hammer.min.js",
+	  "/src/jquery-2.2.0.min.js",
+	  "/src/snake.js",
     ])
   );
 });
