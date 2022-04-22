@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# v1.0
+ 
+CACHE:
+# pages
+index.html
+ 
+NETWORK:
+https://avaju.deta.dev/
