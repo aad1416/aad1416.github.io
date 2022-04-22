@@ -69,6 +69,7 @@ self.addEventListener('install', (event) => {
 	  "/src/hammer.min.js",
 	  "/src/jquery-2.2.0.min.js",
 	  "/src/snake.js",
+	  "/help.png",
     ])
   );
 });

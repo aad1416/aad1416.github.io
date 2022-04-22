@@ -179,7 +179,7 @@ function setMoveEvents() {
                 // Compare key down time with key up time
                 if (+keyDownAt > +lastKeyUpAt) {
                     // Key has been held down for x seconds
-                    speedUpSnake(100);
+                    speedUpSnake(50);
                 }
                 else {
                     // Key has not been held down for x seconds
@@ -198,7 +198,7 @@ function setMoveEvents() {
     mc.add(new Hammer.Press({ event: 'press', time: 200 }));
 
     mc.on("press", function () {
-        speedUpSnake(100);        
+        speedUpSnake(50);        
     });
 
     mc.on("pressup", function () {
