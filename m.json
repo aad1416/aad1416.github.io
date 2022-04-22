@@ -6,12 +6,12 @@
   "display": "browser",
   "scope": "/",
   "id" : "/",
-  "start_url": "/index.html",
+  "start_url": "/",
   "shortcuts": [
     {
       "name": "aad1416",
       "description": "AAD1416",
-      "url": "/index.html"
+      "url": "/"
     }
   ]
 }
