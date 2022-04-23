@@ -22,7 +22,7 @@
 	  "icons": [
         {
           "src": "/aad1416.svg",
-		  "sizes": "192x192",
+		  "sizes": "144x144",
 		  "purpose":"any",
           "type": "image/svg+xml"
         }
