@@ -6,9 +6,7 @@ var foodItems = [];
 var stopMovingOfSnake = false;
 var snake = [];
 var snakeSpeed = 100;
-localStorage.setItem("score", 0)
 var gameFinished = false;
-
 //dynamic styles for the icons relating on the screen properties
 var itemWidth = null;
 var itemHeight = null;
@@ -49,7 +47,7 @@ function createSnake() {
     array_snake_parts.push(snake_head);        
     
     //Create the tail parts    
-    var amountOfPartsByDefault = 3;
+    var amountOfPartsByDefault = 23;
 
     for (var z = 0; z < amountOfPartsByDefault; z++) {
         var snake_tail = $('<div></div>', {
@@ -252,16 +250,12 @@ function checkNewPosition() {
     //check if head is over a part of the tail
     for (var z = 1; z < snake.length; z++) {
         var part = snake[z];
-        if (head.position().top === part.position().top && head.position().left === part.position().left) {
-			if ((snake.length-4) >= Number(localStorage.getItem("score")) ){localStorage.setItem("score",(snake.length-4));};
-            showInfoAlert('<h4 dir=auto>باختی :)))</h4><br/><p style="font-size:19px">امتیاز: <b>' + (snake.length-4) + '</b></br><br/>بهترین امتیاز شما: <b>'+localStorage.getItem("score")+'</b></p><br/><a href="#" onclick="location.reload();">شروع دوباره</a><br/><br/>');
+        if (head.position().top === part.position().top && head.position().left === part.position().left) {if (localStorage.scoresnake != null ){if ((snake.length-23) >= Number(localStorage.scoresnake)){localStorage.setItem("scoresnake",(snake.length-23));}} else {localStorage.setItem("scoresnake" , 0)};
+            showInfoAlert('<h4 dir=auto>باختی :)))</h4><br/><p style="font-size:19px">امتیاز: <b>' + (snake.length-23) + '</b></br><br/>بهترین امتیاز شما: <b>'+localStorage.getItem("scoresnake")+'</b></p><br/><a href="#" onclick="location.reload();">شروع دوباره</a><br/><br/>');
             //focus link for key event
             $('#infoAlert a').focus();
             stopMovingOfSnake = true;
-            killSnake();
-			console.log(localStorage.getItem("score"))
-			
-			
+            killSnake();	
         }
     }    
     
