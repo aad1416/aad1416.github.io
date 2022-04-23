@@ -47,7 +47,7 @@ function createSnake() {
     array_snake_parts.push(snake_head);        
     
     //Create the tail parts    
-    var amountOfPartsByDefault = 23;
+    var amountOfPartsByDefault = 4;
 
     for (var z = 0; z < amountOfPartsByDefault; z++) {
         var snake_tail = $('<div></div>', {
@@ -250,8 +250,8 @@ function checkNewPosition() {
     //check if head is over a part of the tail
     for (var z = 1; z < snake.length; z++) {
         var part = snake[z];
-        if (head.position().top === part.position().top && head.position().left === part.position().left) {if (localStorage.scoresnake != null ){if ((snake.length-23) >= Number(localStorage.scoresnake)){localStorage.setItem("scoresnake",(snake.length-23));}} else {localStorage.setItem("scoresnake" , 0)};
-            showInfoAlert('<h4 dir=auto>باختی :)))</h4><br/><p style="font-size:19px">امتیاز: <b>' + (snake.length-23) + '</b></br><br/>بهترین امتیاز شما: <b>'+localStorage.getItem("scoresnake")+'</b></p><br/><a href="#" onclick="location.reload();">شروع دوباره</a><br/><br/>');
+        if (head.position().top === part.position().top && head.position().left === part.position().left) {if (localStorage.scoresnake != null ){if ((snake.length-5) >= Number(localStorage.scoresnake)){localStorage.setItem("scoresnake",(snake.length-5));}} else {localStorage.setItem("scoresnake" , 0)};
+            showInfoAlert('<h4 dir=auto>باختی :)))</h4><br/><p style="font-size:19px">امتیاز: <b>' + (snake.length-5) + '</b></br><br/>بهترین امتیاز شما: <b>'+localStorage.getItem("scoresnake")+'</b></p><br/><a href="#" onclick="location.reload();">شروع دوباره</a><br/><br/>');
             //focus link for key event
             $('#infoAlert a').focus();
             stopMovingOfSnake = true;
