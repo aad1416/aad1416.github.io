@@ -21,6 +21,8 @@
 	  "icons": [
         {
           "src": "/aad1416.svg",
+		  "sizes": "192x192",
+		  "purpose":"any",
           "type": "image/svg+xml"
         }
       ]
