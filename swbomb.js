@@ -61,11 +61,12 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('install', (event) => {
   event.waitUntil(
     addResourcesToCache([
-	  "/",
-	  "/index.html",
-	  "/Shabnam.woff2",
+      "/bomb.html",
 	  "/m.json",
 	  "/aad1416.svg",
+	  "/bomb/bomb.js",
+	  "/bomb/favicon.ico",
+	  "/bomb/mine.svg",
     ])
   );
 });

@@ -61,11 +61,13 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('install', (event) => {
   event.waitUntil(
     addResourcesToCache([
-	  "/",
-	  "/index.html",
-	  "/Shabnam.woff2",
+      "/snake.html",
 	  "/m.json",
 	  "/aad1416.svg",
+	  "/snake/hammer.min.js",
+	  "/snake/jquery-2.2.0.min.js",
+	  "/snake/snake.js",
+	  "/snake/help.png",
     ])
   );
 });

@@ -5,36 +5,31 @@
 		<link rel="manifest" href="/m.json" />
 		<link rel="icon" href="aad1416.svg" sizes="any" type="image/svg+xml"/>
 		<meta name="theme-color" content="#303c26" />
-		<title> aad1416 - Snake </title>
-		<script script src="src/jquery-2.2.0.min.js"></script>
-		<script src="src/snake.js"></script>
-		<script src="src/hammer.min.js"></script>
+		<title> aad1416 </title>
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="msapplication-tap-highlight" content="no" />
-	  
+		<meta name="msapplication-tap-highlight" content="no" /> 
       <style>
-	  body, html {margin: 0;padding: 0;font-size: 16px;height: 100%;width: 100%;font-family: Arial, Helvetica, sans-serif;background:#303c26; }main {width: 100%;height: 100%;position: absolute;}#field {background-color: #121312;width: 100%;height: 100%;position: absolute;overflow: hidden;z-index: 1; }#field .snake-head {width: 2rem;height: 2rem;background-color: #1976D2;position: absolute;background-color: #9CCC65;z-index: 1; }#field .snake-tail {width: 2rem;height: 2rem;background-color: #1976D2;position: absolute;background-color: #fff; }#field .food {width: 2rem;height: 2rem;background-color: #1976D2;position: absolute;background-color: #E91E63; }#infoAlert {width: 8rem;height: auto;top: 25%;left: calc(50% - 5rem);background-color: #F7F7F7;z-index: 10;position: absolute;text-align: center;display: none;padding: .8rem;border: 2px solid #607D8B; }#infoAlert a {text-decoration: none;color: green;outline: none;transition: color ease .2s; font-size:20px; }#infoAlert a:hover {color: #00ac00; } h4{font-size:20px;} #help{outline: none;width:30px;height:30px;background-image:url('help.png');background-size:100% 100%;background-repeat:no-repeat;}
+	  @font-face{font-family:shabnam;src:url('Shabnam.woff2') format('woff2')} body{font-family:shabnam,Cinzel,Georgia, serif;margin:30px;} h1,h2{text-align:justify;} h1{font-size:24px;} h2{font-size:20px;} li{font-size:24px;line-height:50px;} a{text-decoration:none;color:}
+	  @media screen and (max-width:400px){h1{font-size:20px;}h2{font-size:16px;}}
 	  </style>
    </head>
    <body>
+<h1 dir="auto">
+سلام. خوش اومدید!
+<br />
+بعد از ورود به بازی های زیر، می تونید اینترنت تون رو خاموش کنید و از این به بعد به صورت آفلاین از این بازی ها استفاده کنید. یعنی اگه دفعه ی بعد یا مثلا چند روز دیگه خواستید دوباره بازی کنید، دیگه نیازی به اینترنت نداریدو با وارد کردن آدرس سایت بازی اجرا می شه.
+</h1>
 
-		    <main>
-			
-        <div id="field">
-		   <button type="button" onclick="help()" id="help"><a>
-		</div>
-    </main>
-
-    <div id="infoAlert" class="animated"></div>
-   
+<ul dir='rtl'>
+<li><a href='snake.html'>Snake</a></li>
+<li><a href='2048.html'>2048</a></li>
+<li><a href='bomb.html'>بمب یاب</a></li>
+</ul>
+<h2 dir='auto'>
+برای دسترسی راحت تر می تونید آیکون میانبر سایت یا هرکدوم از بازی ها رو به هوم اسکرین خودتون اضافه کنید تا همیشه بدون نصب و اینترنت، بتونید بازی کنید.
+<h2>
+<a href="mailto:info@aad1416.tk">info@aad1416.tk</a>
 	<script>
-	        function tch() {
-            return ( 'ontouchstart' in window ) ||
-                   ( navigator.maxTouchPoints > 0 ) ||
-                   ( navigator.msMaxTouchPoints > 0 );
-        };
-	function help(){if(tch()){stopMovingOfSnake = true;showInfoAlert('<h4 dir=auto>با کشیدن دست به سمت بالا، پایین، چپ یا راست، جهت مار را تغییر دهید.</h4><a href="#" onclick="location.reload();">شروع</a>');}else{stopMovingOfSnake = true;showInfoAlert('<h4 dir=auto>با فشردن کلیدهای بالا، پایین، چپ یا راست، جهت حرکت مار را تغییر دهید.</h4><a href="#" onclick="location.reload();">شروع</a>');}};
-	
 const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {
