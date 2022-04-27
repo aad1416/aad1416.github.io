@@ -66,6 +66,7 @@ self.addEventListener('install', (event) => {
 	  "/Shabnam.woff2",
 	  "/m.json",
 	  "/aad1416.svg",
+	  "/bgaad1416.svg",
     ])
   );
 });
