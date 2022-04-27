@@ -9,7 +9,7 @@
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="msapplication-tap-highlight" content="no" /> 
       <style>
-	  @font-face{font-family:shabnam;src:url('Shabnam.woff2') format('woff2')} body{background-color:#f0f0f0;font-family:shabnam,Cinzel,Georgia, serif;margin:30px;} .img{position:fixed;opacity:0.25;height:100%;top:-30px;z-index:-9999;*/background-image:url('aad1416.svg')*/;width:100%;background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;}h1,h2{text-align:justify;} h1{font-size:24px;} h2{font-size:20px;color:#660066;} li{font-size:24px;line-height:50px;color:#c5d5c5;} li a {color:#660033;}li a:hover{color:#666633;}a{text-decoration:none;color:#666600;}a:hover{color:#CC3300;}.footer{position:absolute;bottom:0;width:90%;left:5%;}details{font-size:30px;}summary{cursor:pointer;}
+	  @font-face{font-family:shabnam;src:url('Shabnam.woff2') format('woff2')} body{background-color:#f0f0f0;font-family:shabnam,Cinzel,Georgia, serif;margin:30px;} .img{position:fixed;opacity:0.25;height:100%;top:-30px;z-index:-9999;background-image:url('aad1416.svg');width:100%;background-repeat:no-repeat;background-attachment:fixed;background-position:50% 50%;}h1,h2{text-align:justify;} h1{font-size:24px;} h2{font-size:20px;color:#660066;} li{font-size:24px;line-height:50px;color:#c5d5c5;} li a {color:#660033;}li a:hover{color:#666633;}a{text-decoration:none;color:#666600;}a:hover{color:#CC3300;}.footer{margin-top:30vh;}details{font-size:30px;}summary{cursor:pointer;}
 	  @media screen and (max-width:400px){h1{font-size:20px;}h2{font-size:16px;}}
 	  
 	  </style>
@@ -44,7 +44,7 @@ const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {
       const registration = await navigator.serviceWorker.register(
-        '/sw.js',
+        '/dsw.js',
         {
           scope: '/',
         }
